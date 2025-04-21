@@ -2,8 +2,10 @@
 
 ## Why
 
-In our APIs, I intentionally uses epoch timestamp in seconds (long / float)) everywhere. This avoids - confusion/ambiguity about the timezone
-- questions/preferences about rendering format
+In our APIs, I intentionally uses epoch timestamp in seconds (long / float) everywhere. The reasons are
+
+- no confusion/ambiguity about the timezone
+- no questions/preferences about rendering format
 
 However, it introduces an obvious problem - it's not human readable.
 

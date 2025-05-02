@@ -3,9 +3,15 @@
     "name": "Epoch Converter",
     "version": "1.0",
     "description": "Converts epoch timestamps to human-readable dates.",
+    "icons": {
+        "512": "icons/512/icon.png"
+    },
     "permissions": [
-        "activeTab"
+        "activeTab", "storage"
     ],
+    "action": {
+        "default_icon": "icons/48/on.png"
+    },
     "content_scripts": [
         {
             "matches": [
@@ -16,9 +22,7 @@
             ]
         }
     ],
-    "icons": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
+    "background": {
+        "service_worker": "background.js"
     }
 }

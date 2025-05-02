@@ -51,7 +51,10 @@ function replaceEpochTimestamps() {
     });
 }
 
-// Run the replacement when the script is loaded
-replaceEpochTimestamps();
-
-// Also, consider setting up a mutation observer if you want to handle dynamically loaded content
+chrome.storage.sync.get('setting', ({ setting }) => {
+    const disabled = (setting || {}).disabled || false;
+    if (! disabled) {
+        // Run the replacement when the script is loaded
+        replaceEpochTimestamps();
+    }
+});

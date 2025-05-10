@@ -27,6 +27,7 @@ Until I release this into the Google/Chrome store...
 2. go to chrome://extensions/
 3. top-right corner, enable the `Developer mode`
 4. click `Load unpacked` button and choose the directory
+5. In the extension detail, check the `Pin to toolbar` so you can enable/disable it without uninstall/reinstall.
 
 This comes with the benefit of changing the rendering yourself. Then simply `reload` the extension.
 

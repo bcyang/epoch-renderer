@@ -1,4 +1,4 @@
-# Epoch Renderer Chrome Extension
+# Chrome Extension - Epoch Renderer 
 
 ## Why
 
